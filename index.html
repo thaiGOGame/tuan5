@@ -61,12 +61,18 @@
     
     #center {
         width: 1180px;
-        height: 440px;
+        
         display: flex;
         flex-direction: column;
         margin: 50px 125px;
     }
-    
+    #footer{
+        width: 1180px;
+        
+        display: flex;
+        flex-direction: column;
+        margin: 50px 125px;
+    }
     .flex_space_around {
         display: flex;
         justify-content: space-around;
@@ -197,6 +203,31 @@
     }
     .img{
         width: 200px;
+    }
+    #input_warpper{
+        display:flex;
+        justify-content: center;
+    }
+    #input_email{
+        text-align: center;
+        width: 300px;
+        border: none;
+    }
+    #subscribe_button{
+        width: 100px;
+        height: 50px;
+        background: aqua;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        text-align: center;
+        border: none;
+    }
+    .grid_4x4_warpper{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto auto auto;
+
     }
 </style>
 
@@ -397,6 +428,46 @@
                         <div><img src="images/Rating 300.png" alt=""></div>
                         <div>234 items sold</div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="flex_space_around"><img src="images/Image 1710.png" alt=""></div>
+            <h2 class="flex_space_around">Subscribe to our newsletter</h2>
+            <div id="input_warpper">
+                <input type="text" placeholder="✉ Input your email" id="input_email">
+                <input type="button" value="Subscribe" id="subscribe_button">
+            </div>
+            <div class="grid_4x4_warpper">
+                <h2>Product</h2>
+                <h2>Resources</h2>
+                <h2>Company</h2>
+                <h2>Plans & Pricing</h2>
+                <div>Features</div>
+                <div>Blog</div>
+                <div>About us</div>
+                <div>Personal</div>
+                <div>Pricing</div>
+                <div>User guides</div>
+                <div>Contact us</div>
+                <div>Start up</div>
+                <div></div>
+                <div>Webinars</div>
+                <div>Organization</div>
+            </div>
+            <div class="flex_space_between" style="margin: 60px 0px;">
+                <select name="" id="" style="border: none;">
+                    <option value="EN">English</option>
+                    <option value="VN">Tiếng Việt</option>
+                </select>
+                <div>
+                    ©2022 Brand, Inc, • Privacy • Terms • Sitemap
+                </div>
+                <div class="flex_space_between" style="width: 150px;">
+                    <div><img src="images/Twitter 9.png" alt=""></div>
+                    <div><img src="images/Facebook 9.png" alt=""></div>
+                    <div><img src="images/LinkedIn 8.png" alt=""></div>
+                    <div><img src="images/YouTube 8.png" alt=""></div>
                 </div>
             </div>
         </div>
