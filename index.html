@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header {
+        display: flex;
+    }
+    
+    #warpper_all {
+        width: 1430px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #header {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    #header_left {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 615px;
+        font-size: 17px;
+    }
+    
+    #header_right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 480px;
+    }
+    
+    #search {
+        background-color: rgba(220, 220, 220, 0.2);
+        border: none;
+        width: 330px;
+        height: 30px;
+    }
+    
+    #selected_item {
+        border-bottom: aqua solid 3px;
+        height: 100%;
+    }
+    
+    #home {
+        color: aqua;
+        margin-top: 53%;
+        font-weight: bold;
+    }
+    
+    #center {
+        width: 1180px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 125px;
+    }
+    
+    .flex_space_around {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        align-items: center;
+    }
+    
+    .flex_space_between {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bold {
+        font-weight: 600;
+    }
+    
+    #product_title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    
+    #text420 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 5px;
+    }
+    
+    .rate {
+        width: 100px;
+        height: 17px;
+    }
+    
+    .margin_left_right_30px {
+        margin: 0 30px;
+    }
+    
+    #center_pictures {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    
+    #main_picture {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .flex_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #benefit {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    #select_warpper {
+        position: relative;
+        width: 342px;
+        height: 390px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .select_content {
+        padding: 10px 20px;
+        position: absolute;
+    }
+    
+    .select {
+        height: 30px;
+        background: rgba(220, 220, 220, 0.2);
+        padding: 10px 20px;
+    }
+    
+    #buy_now_button {
+        background: aqua;
+        color: white;
+        text-align: center;
+    }
+    
+    #add_to_cart_button {
+        border-color: aqua;
+        color: aqua;
+        text-align: center;
+    }
+    
+    .price {
+        position: absolute;
+        right: 0px;
+        color: aqua;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    #product_description {
+        width: 100%;
+        height: 380px;
+    }
+</style>
+
+<body>
+    <div id="warpper_all">
+        <div id="header">
+            <div id="header_left">
+                <img src="images/Image 1710.png" alt="">
+                <div id="selected_item">
+                    <div id="home">Home</div>
+                </div>
+                <div>Promotions</div>
+                <div>Best-sellers</div>
+                <div>New releases</div>
+                <div>Support</div>
+            </div>
+            <div id="header_right">
+                <input type="text" placeholder="🔍︎ Search..." id="search">
+                <img src="images/Bell 1.png" alt="">
+                <img src="images/Shopping cart simple 1.png" alt="">
+                <img src="images/Avatar 758.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
